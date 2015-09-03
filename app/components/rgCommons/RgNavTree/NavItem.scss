@@ -1,0 +1,23 @@
+.nav-item__content {
+  height: 45px;
+  border: none;
+  outline: 0;
+  color: #89949B;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 25px;
+
+  > .nav-item__icon {
+    margin-right: 15px;
+  }
+}
+
+.nav-item__content:hover {
+  background: rgba(0,0,0,.2);
+}
+
+.nav-item__link_current .nav-item__content {
+  //background: rgba(0,0,0,.2);
+}

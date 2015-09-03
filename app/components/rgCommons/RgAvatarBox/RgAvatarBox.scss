@@ -1,0 +1,14 @@
+.rg-avatar-box {
+  width: 250px;
+  height: 75px;
+  background: #80BAF9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .rg-avatar-box__name {
+    color: white;
+    font-size: 18px;
+  }
+}

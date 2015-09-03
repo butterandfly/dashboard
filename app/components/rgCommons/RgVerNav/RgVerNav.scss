@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.react-tabs [role=tablist] {
+  border-bottom: 0px;
+  margin: 0 0 10px;
+  padding: 0;
+  background: #6FA2D9;
+  display: flex;
+  justify-content: space-around;
+  color: #52779e;
+}
+
+.react-tabs [role=tab] {
+  bottom: 0;
+  border: 0;
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.react-tabs [role=tab][aria-selected=true] {
+  border-radius: 0;
+  background: #80BAF9;
+  color: #357bc7;
+}
+
+.rg-ver-nav {
+  height: 100%;
+  background: $dark-background-color;
+  color: #89949B;
+}

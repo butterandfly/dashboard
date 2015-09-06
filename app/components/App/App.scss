@@ -1,7 +1,23 @@
+@import '../variables';
+
 html {
   font-size: 20px;
 }
 
 body{
   font-size: 0.8rem;
+
+  font-color: $primary-text-color;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.app {
+  height: 100%;
+
+  .app__page {
+    margin-top: $nav-height;
+  }
 }

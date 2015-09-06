@@ -1,8 +1,10 @@
+@import '../../variables.scss';
+
 .nav-item__content {
   height: 45px;
   border: none;
   outline: 0;
-  color: #89949B;
+  color: $secondary-light-text-color;
   display: block;
   text-decoration: none;
   font-size: 16px;
@@ -15,9 +17,9 @@
 }
 
 .nav-item__content:hover {
-  background: rgba(0,0,0,.2);
+  background: $dark-primary-color;
 }
 
 .nav-item__link_current .nav-item__content {
-  //background: rgba(0,0,0,.2);
+  background: $dark-primary-color;
 }

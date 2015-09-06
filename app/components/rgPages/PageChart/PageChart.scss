@@ -1,0 +1,16 @@
+@import '../../layouts.scss';
+
+.page-chart {
+  @include ver-flex-layout;
+  @include center-flex-content;
+
+  > .chart-container {
+    width: 800px;
+    height: 400px;
+
+    > canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

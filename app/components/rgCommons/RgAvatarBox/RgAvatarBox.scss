@@ -1,6 +1,8 @@
+@import '../../variables.scss';
+
 .rg-avatar-box {
-  width: 250px;
-  height: 75px;
+  width: $ver-nav-width;
+  height: $nav-height;
   background: #80BAF9;
 
   display: flex;
@@ -9,6 +11,6 @@
 
   .rg-avatar-box__name {
     color: white;
-    font-size: 18px;
+    font-size: 0.9em;
   }
 }

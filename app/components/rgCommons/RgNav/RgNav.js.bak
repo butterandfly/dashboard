@@ -1,0 +1,17 @@
+import React from 'react'
+import {Navbar, Nav, NavItem} from 'react-bootstrap'
+
+const RgNav = React.createClass({
+  render() {
+    return (
+      <Navbar brand='Rg-Dashboard' fluid fixedTop toggleNavKey={0}>
+        <Nav right eventKey={0}> {/* This is the eventKey referenced */}
+          <NavItem eventKey={1} href='#'>Link</NavItem>
+          <NavItem eventKey={2} href='#'>Link</NavItem>
+        </Nav>
+      </Navbar>
+    )
+  }
+})
+
+export default RgNav

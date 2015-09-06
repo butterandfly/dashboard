@@ -1,22 +1,28 @@
+import './RgNav.scss'
+
 import React from 'react'
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
+import {Link} from 'react-router'
+import classNames from 'classnames'
 
 const RgNav = React.createClass({
   render() {
+    let iconCn = classNames('fa', 'fa-gear')
     return (
-      <Navbar brand='Rg-Dashboard' inverse toggleNavKey={0}>
-        <Nav right eventKey={0}> {/* This is the eventKey referenced */}
-          <NavItem eventKey={1} href='#'>Link</NavItem>
-          <NavItem eventKey={2} href='#'>Link</NavItem>
-          <NavDropdown eventKey={3} title='Dropdown' id='collapsible-navbar-dropdown'>
-            <MenuItem eventKey='1'>Action</MenuItem>
-            <MenuItem eventKey='2'>Another action</MenuItem>
-            <MenuItem eventKey='3'>Something else here</MenuItem>
-            <MenuItem divider />
-            <MenuItem eventKey='4'>Separated link</MenuItem>
-          </NavDropdown>
-        </Nav>
-      </Navbar>
+      <nav className="navbar navbar-default navbar-fixed-top rg-nav">
+        <div className="rg-nav__container">
+          <div>
+            <Link to="/">
+              <span className="rg-nav__header">RG Dashboard</span>
+            </Link>
+          </div>
+
+          <ul className="rg-nav__buttons">
+            <li><a href="#">
+              <i className={iconCn}></i>
+            </a></li>
+          </ul>
+        </div>
+      </nav>
     )
   }
 })

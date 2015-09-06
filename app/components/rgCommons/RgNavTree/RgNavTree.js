@@ -8,6 +8,7 @@ const testData = {
   list: [
     {name: 'Dashboard', linkTo: 'dashboard', icon: 'tachometer'},
     {name: 'Chart', linkTo: 'chart', icon: 'bar-chart'},
+    {name: 'PieChart', linkTo: 'piechart', icon: 'pie-chart'},
     {name: 'Table', linkTo: 'table', icon: 'table'},
     {name: 'Login', linkTo: 'login', icon: 'power-off'}
     // {name: 'South Park', list: [

@@ -43,7 +43,8 @@ module.exports = {
     alias: {
       'components': path.join(__dirname, 'app/components'),
       'rgPages': path.join(__dirname, 'app/components/rgPages'),
-      'rgCommons': path.join(__dirname, 'app/components/rgCommons')
+      'rgCommons': path.join(__dirname, 'app/components/rgCommons'),
+      'rgStores': path.join(__dirname, 'app/components/rgStores')
     }
   },
   module: {

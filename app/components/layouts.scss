@@ -1,0 +1,23 @@
+@mixin flex-layout {
+  display: flex;
+}
+
+@mixin hon-flex-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin ver-flex-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin center-flex-content {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin no-style-list {
+  padding: 0;
+  list-style: none;
+}

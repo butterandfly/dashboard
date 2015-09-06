@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+@import '../../layouts.scss';
+
+.rg-nav {
+  margin-left: $ver-nav-width;
+  z-index: 1;
+  background-color: $dark-background-color;
+
+  .rg-nav__container {
+    @include hon-flex-layout;
+
+    justify-content: space-between;
+    align-items: center;
+    height: $nav-height;
+    padding: 0 15px;
+  }
+
+  .rg-nav__header {
+    font-size: 1.4rem;
+    color: $primary-light-text-color;
+  }
+
+  .rg-nav__buttons {
+    @include no-style-list;
+    @include flex-layout;
+    margin: 0;
+
+    a {
+      color: $secondary-light-text-color;
+      display: block;
+      padding: 0;
+      line-height: 70px;
+      font-size: 25px;
+      width: 70px;
+      text-align: center;
+    }
+
+    a:hover {
+      background: $dark-primary-color;
+      color: $primary-light-text-color;
+    }
+  }
+}

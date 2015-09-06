@@ -1,0 +1,16 @@
+@import '../../layouts.scss';
+
+.page-pie-chart {
+  @include ver-flex-layout;
+  @include center-flex-content;
+
+  > .chart-container {
+    width: 600px;
+    height: 600px;
+
+    > canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
